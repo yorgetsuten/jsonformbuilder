@@ -1,4 +1,4 @@
-import type { FormConfig, Item } from 'src/app/model/schema'
+import type { FormConfig } from 'src/app/model/schema'
 
 import styles from './styles.module.css'
 import clsx from 'clsx'
@@ -42,9 +42,11 @@ export function Result({ config, containerClassName }: Props) {
         }
       })}
 
-      {/*   {config.buttons.map((item, index) => ( */}
-      {/*     <Button key={`${item.name}_${index}`}>{item.text}</Button> */}
-      {/*   ))} */}
+      <div>
+        {config.buttons.map((field, index) => (
+          <Button key={`${field.text}_${index}`}>{field.text}</Button>
+        ))}
+      </div>
     </form>
   )
 }

@@ -35,11 +35,12 @@
     }
 
     &.active {
-      background-color: var(--primary);
+      background-color: var(--accent);
     }
 
     &:hover:not(.active) {
-      background-color: var(--accent);
+      color: var(--text);
+      background-color: var(--secondary);
     }
   }
 }

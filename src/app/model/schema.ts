@@ -10,7 +10,7 @@ export const formConfigSchema = s.object({
   title: s.optional(s.string()),
   buttons: s.array(
     s.object({
-      text: s.string(),
+      text: s.string()
     })
   ),
   fields: s.array(
