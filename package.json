@@ -1,0 +1,40 @@
+{
+  "name": "testask",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "pnpm test && pnpm format && vite build",
+    "preview": "vite preview",
+    "test:types": "tsc -b",
+    "format:eslint": "eslint --fix .",
+    "format:stylelint": "stylelint --fix **/*.css",
+    "format:prettier": "prettier --write .",
+    "test": "pnpm /^test:/",
+    "format": "pnpm /^format:/"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@logux/stylelint-config": "^0.20.0",
+    "@types/node": "^24.0.13",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "prettier": "^2.6.2",
+    "stylelint": "^16.21.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vite": "^7.0.0",
+    "vite-css-modules": "^1.9.2"
+  }
+}

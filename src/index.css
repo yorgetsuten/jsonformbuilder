@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --font-primary: 'Quattrocento Sans', sans-serif;
+  --font-secondary: 'Source Code Pro', monospace;
+
+  --text: #d7ddfc;
+  --primary: #a999d7;
+  --secondary: #453576;
+  --error: #a1113c;
+  --accent: #7d64c9;
+  --bg-primary: #1b2037;
+  --bg-secondary: #323b5a;
+  --bg-tertiary: #030a17;
+
+  --gap-xl: 12px;
+  --gap-l: 8px;
+  --gap-m: 6px;
+  --gap-s: 4px;
+  --radius-l: 16px;
+  --radius-m: 8px;
+
+  background-color: var(--bg-primary);
+}

@@ -1,0 +1,29 @@
+.button {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 1;
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: calc(var(--radius-l) - var(--gap-l));
+  transition: 100ms all ease-in-out;
+
+  &:disabled {
+    color: var(--bg-secondary);
+    cursor: initial;
+    background-color: var(--bg-primary);
+    border: none;
+  }
+
+  &:hover:not(:disabled) {
+    color: var(--text);
+    background-color: var(--accent);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+}
